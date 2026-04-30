@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="emerald">#1a4a3a</color>
+    <color name="emerald_mid">#2d6b55</color>
+    <color name="emerald_dark">#0a1e16</color>
+    <color name="gold">#c9a84c</color>
+    <color name="gold_light">#e8c97a</color>
+    <color name="cream">#faf6ee</color>
+</resources>

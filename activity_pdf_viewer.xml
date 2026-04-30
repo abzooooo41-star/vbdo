@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#2a2a2a" android:layoutDirection="rtl">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:orientation="horizontal" android:background="@color/emerald_dark"
+        android:paddingStart="8dp" android:paddingEnd="8dp" android:gravity="center_vertical">
+        <ImageButton android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless" android:tint="@color/gold"/>
+        <TextView android:id="@+id/tvTitle" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:textColor="@color/gold_light" android:textSize="14sp"
+            android:maxLines="1" android:ellipsize="end" android:paddingStart="8dp"
+            android:paddingEnd="8dp" android:gravity="end"/>
+        <TextView android:id="@+id/tvPageNum" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textColor="#99ffffff" android:textSize="12sp"/>
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="#3a3a3a">
+            <ImageView android:id="@+id/ivPage" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:adjustViewBounds="true"
+                android:scaleType="fitStart" android:padding="8dp"/>
+        </ScrollView>
+        <ProgressBar android:id="@+id/progressBar" android:layout_width="48dp" android:layout_height="48dp"
+            android:layout_gravity="center" android:indeterminateTint="@color/gold" android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:orientation="horizontal" android:background="@color/emerald_dark"
+        android:paddingStart="24dp" android:paddingEnd="24dp" android:gravity="center">
+        <ImageButton android:id="@+id/btnNext" android:layout_width="48dp" android:layout_height="48dp"
+            android:src="@android:drawable/ic_media_previous" android:background="@drawable/nav_btn_bg"
+            android:tint="@color/gold"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/btnPrev" android:layout_width="48dp" android:layout_height="48dp"
+            android:src="@android:drawable/ic_media_next" android:background="@drawable/nav_btn_bg"
+            android:tint="@color/gold"/>
+    </LinearLayout>
+</LinearLayout>

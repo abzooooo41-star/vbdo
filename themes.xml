@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Awrad" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/emerald</item>
+        <item name="colorPrimaryDark">@color/emerald_dark</item>
+        <item name="colorAccent">@color/gold</item>
+        <item name="android:windowBackground">@color/emerald</item>
+        <item name="android:statusBarColor">@color/emerald_dark</item>
+        <item name="android:navigationBarColor">@color/emerald_dark</item>
+    </style>
+</resources>
